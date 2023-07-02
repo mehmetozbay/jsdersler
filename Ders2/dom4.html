@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .bg-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Merhaba</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ipsam,
+        perferendis, facere porro dolorem dolor necessitatibus quia voluptatum
+        eius quisquam et minima dolore molestias culpa tenetur corporis commodi
+        illo laudantium.
+      </p>
+    </div>
+    <script>
+      let containerStyle = document.querySelector(".container").classList;
+      containerStyle.add("bg-red");
+      containerStyle.remove("bg-red");
+    </script>
+  </body>
+</html>

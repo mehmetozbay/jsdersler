@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="say1" />
+    <input type="number" id="say2" />
+    <button onclick="topla()">Topla</button>
+
+    <script>
+      function topla() {
+        let say1 = Number(document.querySelector("#say1").value);
+        let say2 = Number(document.querySelector("#say2").value);
+
+        console.log(typeof say1);
+        console.log(say2);
+        console.log("sonuc=" + (say1 + say2));
+        alert(`sayilarin toplami ${say1 + say2}`);
+      }
+    </script>
+  </body>
+</html>

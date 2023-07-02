@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .title {
+        color: red;
+      }
+      .bg-dark {
+        background-color: black;
+      }
+
+      .text-color {
+        color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="baslik"></h2>
+    <h1 class="title">Merhaba</h1>
+    <script>
+      let titleStyle = document.querySelector(".title").classList;
+      titleStyle.add("bg-dark");
+      titleStyle.add("text-color");
+      console.log(titleStyle);
+    </script>
+  </body>
+</html>
