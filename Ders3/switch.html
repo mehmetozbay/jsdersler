@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="sayi" />
+    <button onclick="sorgula()">Gun Sorgula</button>
+
+    <script>
+      function sorgula() {
+        let sayi = Number(document.querySelector("#sayi").value);
+        switch (sayi) {
+          case 1:
+            alert("pazartesi");
+            break;
+          case 2:
+            alert("sali");
+            break;
+          case 3:
+            alert("carsamba");
+            break;
+          case 4:
+            alert("persembe");
+            break;
+          case 5:
+            alert("cuma");
+            break;
+          case 6:
+            alert("cumartesi");
+            break;
+          case 7:
+            alert("pazar");
+            break;
+          default:
+            alert("yalnis bir sayi girdiniz");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

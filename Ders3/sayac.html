@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="say('-')">-</button>
+    <h1 id="sayac">0</h1>
+    <button onclick="say('+')">+</button>
+
+    <script>
+      function say(islem) {
+        let sayac = document.querySelector("#sayac");
+        let sayi = sayac.innerText;
+
+        // console.log(sayac);
+        // console.log(sayi);
+        if (islem === "+") {
+          sayi++;
+          sayac.innerHTML = sayi;
+        } else {
+          if (sayi > 0) {
+            sayi--;
+          }
+          sayac.innerHTML = sayi;
+        }
+
+        // alert(islem);
+      }
+    </script>
+  </body>
+</html>

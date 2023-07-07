@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 1 den 10 a kadar bilgisayara rastgele bir sayi tutturup kullaniciya yardimci olarak sayiyi tahmin etmesini saglayalim -->
+    <input type="number" id="sayi" />
+    <button onclick="sorgula()">Sorgula</button>
+    <script>
+      let randomSayi = Math.floor(Math.random() * 10) + 1;
+      //   alert(randomSayi);
+      let sayac = 0;
+
+      function sorgula() {
+        let sayi = Number(document.querySelector("#sayi").value);
+        if (sayi > randomSayi) {
+          alert("sayinizi azaltiniz");
+          sayac++;
+        } else if (sayi < randomSayi) {
+          alert("sayinizi artiriniz");
+          sayac++;
+        } else {
+          sayac++;
+          alert(sayac + " seferde bildiniz");
+        }
+      }
+    </script>
+  </body>
+</html>

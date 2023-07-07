@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="gun" />
+    <button onclick="sorgula()">Gun Sorgula</button>
+
+    <script>
+      function sorgula() {
+        let gun = document.querySelector("#gun").value;
+        switch (gun) {
+          case "pazartesi":
+          case "sali":
+          case "carsamba":
+          case "persembe":
+          case "cuma":
+            alert("gun hafta icidir");
+            break;
+          case "cumartesi":
+          case "pazar":
+            alert("gun hafta sonudur");
+            break;
+          default:
+            alert("yalnis bir deger girdiniz");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

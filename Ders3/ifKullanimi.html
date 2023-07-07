@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="sayi" />
+    <button onclick="sorgula()">Sorgula</button>
+    <script>
+      function sorgula() {
+        let sayi = Number(document.querySelector("#sayi").value);
+        console.log(typeof sayi);
+        if (sayi > 10) {
+          alert("sayi 10 dan buyuktur");
+        }
+      }
+    </script>
+  </body>
+</html>

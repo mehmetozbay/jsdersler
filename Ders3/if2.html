@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- kullanicidan bir sayi isteyiniz sayi 10 ila 20 arasinda ise alert ile uyari veriniz -->
+    <input type="number" name="" id="sayi" />
+    <button onclick="sor()">Sorgula</button>
+
+    <script>
+      function sor() {
+        let sayi = Number(document.querySelector("#sayi").value);
+
+        if (sayi >= 10 && sayi <= 20) {
+          alert("sayi 10 ila 20 arasindadir");
+        }
+      }
+    </script>
+  </body>
+</html>
