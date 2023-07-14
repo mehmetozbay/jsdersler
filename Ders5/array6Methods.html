@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arabalar = ["Mercedes", "BMW", "VW", "Audi", "VW"];
+      let sayilar = [1, 5, 6];
+      console.log(arabalar.concat(sayilar, 0, "Ali", [1, 5]));
+      // concat ile dizileri birlestirebiliriz
+      let cars = arabalar.concat(sayilar, 0, "Ali", [1, 5]);
+      console.log(cars);
+      console.log(arabalar);
+
+      //includes dizi icerisinde aranan degerin olup
+      //    olmadigini bize geri donderir
+      console.log(arabalar.includes("VW")); //true
+      console.log(arabalar.includes("xx")); //false
+
+      //indexOf
+      // dizi icerisinde ilk olarak bulundugu yerin indexini verir
+      //   eger bulamazsa -1 degeri donderir
+      console.log(arabalar.indexOf("VW"));
+      console.log(arabalar.indexOf("xx"));
+
+      console.log(arabalar.lastIndexOf("VW"));
+      console.log(arabalar.lastIndexOf("xx"));
+
+      //   join dizi icindeki elemanlari birlestirerek String olusturur
+      console.log(arabalar.join("-"));
+      console.log(arabalar);
+      let arabaJoin = arabalar.join(" ");
+      console.log(arabaJoin);
+      console.log(arabalar.toString());
+
+      console.log(arabalar.slice(1));
+      console.log(arabalar.slice(2, 4));
+    </script>
+
+    <!-- hayvanlar dizisi olusturup yukaridaki methodlari uygulayiniz -->
+  </body>
+</html>

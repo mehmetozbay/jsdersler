@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arabalar = ["Mercedes", "BMW", "VW", "Audi"];
+      arabalar.pop(); //dizinin son elemanini siler //Audi silindi
+      //   let arabalar = ["Mercedes", "BMW", "VW"];
+      console.log(arabalar);
+      arabalar.push("Mazda"); //dizinin sonuna ekleme yapar Mazda eklendi
+      //   let arabalar = ["Mercedes", "BMW", "VW","Mazda"];
+      console.log(arabalar);
+
+      arabalar.shift(); //dizinin ilk elemani siliniyor Mercedes silindi
+      //   let arabalar = [ "BMW", "VW","Mazda"];
+      console.log(arabalar);
+      arabalar.unshift("Tesla"); //dizinin basina eleman ekleniyor Tesla eklendi
+      //   let arabalar = [ "Tesla","BMW", "VW","Mazda"];
+      console.log(arabalar);
+
+      arabalar.sort(); //harfe gore siralama yapiyoruz
+      //   let arabalar = ["BMW","Mazda", "Tesla", "VW"];
+      console.log(arabalar);
+
+      arabalar.reverse(); //diziyi tersine cevirir
+      //   let arabalar = ["VW","Tesla","Mazda","BMW"];
+      console.log(arabalar);
+    </script>
+
+    <!-- hayvanlar adinda bir dizi olusturup yukaridaki methodlari uygulayiniz -->
+  </body>
+</html>
