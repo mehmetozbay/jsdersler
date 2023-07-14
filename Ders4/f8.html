@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const notHesapla = (y1, y2) => {
+        if (isNaN(y1) || isNaN(y2)) {
+          return alert("yalnis bir deger girdiniz");
+        } else {
+          return (y1 + y2) / 2;
+        }
+      };
+
+      let not = notHesapla(50, 70);
+      if (not !== undefined) {
+        alert(not);
+      }
+    </script>
+  </body>
+</html>

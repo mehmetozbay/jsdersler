@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="tarih" />
+    <button onclick="hesapla()">Hesapla</button>
+    <script>
+      function yasHesapla(tarih) {
+        alert("yasiniz =" + (2023 - tarih));
+      }
+      function hesapla() {
+        let tarih = Number(document.querySelector("#tarih").value);
+        yasHesapla(tarih);
+      }
+    </script>
+  </body>
+</html>

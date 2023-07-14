@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let j = 50; // global scope ile her yerden erisilir
+      let i = 10;
+      const f1 = () => {
+        let i = 50;
+        // eger bir degisken fonksiyon icerinde tanimlamnirsa fonksiyon scope oluyor ve fonksiyon disindan cagrilamaz
+        console.log("j f.ici" + j);
+        console.log("i f.ici" + i);
+      };
+
+      f1();
+      //   console.log(i);
+      console.log("j f.disi" + j);
+      console.log("i f.disi" + i);
+    </script>
+  </body>
+</html>

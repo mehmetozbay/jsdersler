@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" name="" id="sayi" />
+
+    <button onclick="hesapla()">Hesapla</button>
+
+    <script>
+      const faktoriyelHesapla = (sayi) => {
+        let faktoriyel = 1;
+        for (let i = 1; i <= sayi; i++) {
+          faktoriyel *= i;
+        }
+
+        alert(faktoriyel);
+      };
+
+      const hesapla = () => {
+        let sayi = Number(document.querySelector("#sayi").value);
+        faktoriyelHesapla(sayi);
+      };
+    </script>
+  </body>
+</html>
