@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let sayilar = [2, 5, 7, 10];
+      console.log(
+        sayilar
+          .filter((item) => item > 5)
+          .map((item) => item * 5)
+          .reduce((toplam, item) => toplam + item, 0)
+      );
+    </script>
+  </body>
+</html>
