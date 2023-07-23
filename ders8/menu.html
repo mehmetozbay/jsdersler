@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #menu {
+        height: 2vh;
+        margin-bottom: 1vh;
+      }
+      .menu-container {
+        height: 97vh;
+        background-color: red;
+        width: 300px;
+        position: absolute;
+        left: -300px;
+        transition: all 1s;
+      }
+
+      .active {
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="menu">Menu</button>
+    <div class="menu-container"></div>
+
+    <script>
+      let menu = document.getElementById("menu");
+      let menuContainer = document.querySelector(".menu-container");
+      menu.addEventListener("click", () => {
+        menuContainer.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

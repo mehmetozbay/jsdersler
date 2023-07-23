@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .baslik {
+        color: red;
+      }
+      .baslik2 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" class="baslik">Merhaba</h1>
+    <button id="btnTikla">Tikla</button>
+    <script>
+      let btnTikla = document.getElementById("btnTikla");
+      let title = document.getElementById("title");
+      btnTikla.addEventListener("click", () => {
+        title.setAttribute("class", "baslik2");
+      });
+    </script>
+  </body>
+</html>

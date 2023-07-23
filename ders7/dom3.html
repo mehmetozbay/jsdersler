@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="liste">
+      <li class="ad">Ali</li>
+      <li class="ad">Ahmet</li>
+    </ul>
+    <button id="tikla">Tikla</button>
+    <script>
+      let liste = document.getElementsByClassName("liste")[0];
+      console.log(liste);
+
+      document.getElementById("tikla").addEventListener("click", () => {
+        let ad = document.getElementsByClassName("ad");
+        ad[1].innerHTML = "Sena";
+      });
+    </script>
+  </body>
+</html>

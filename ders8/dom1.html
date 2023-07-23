@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="txtAd" />
+    <button id="btnAdd">Ekle</button>
+    <ul id="liste">
+      <li>Ali</li>
+      <li>Sena</li>
+      <li>Yunus</li>
+    </ul>
+
+    <script>
+      let txtAd = document.getElementById("txtAd");
+      let btnAdd = document.getElementById("btnAdd");
+      let liste = document.getElementById("liste");
+
+      btnAdd.addEventListener("click", () => {
+        let liYeni = document.createElement("li");
+        liYeni.innerText = txtAd.value;
+        // liste.appendChild(liYeni);
+        liste.prepend(liYeni);
+      });
+    </script>
+  </body>
+</html>

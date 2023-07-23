@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 50px;
+        margin-bottom: 5px;
+      }
+      .active {
+        background-color: red;
+        text-align: center;
+      }
+      .passive {
+        background-color: blue;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Merhaba</div>
+
+    <button id="btnAdd">Add</button>
+    <button id="btnRemove">Remove</button>
+    <button id="btnToggle">Toggle</button>
+    <button id="btnReplace">Replace</button>
+    <script>
+      let container = document.querySelector(".container");
+      let btnAdd = document.getElementById("btnAdd");
+      let btnToggle = document.getElementById("btnToggle");
+      let btnReplace = document.getElementById("btnReplace");
+      let btnRemove = document.getElementById("btnRemove");
+      btnAdd.addEventListener("click", () => {
+        console.log(container.classList);
+        container.classList.add("active");
+        console.log(container.classList);
+      });
+
+      btnRemove.addEventListener("click", () => {
+        container.classList.remove("active");
+      });
+      btnToggle.addEventListener("click", () => {
+        container.classList.toggle("active");
+      });
+
+      btnReplace.addEventListener("click", () => {
+        if (container.classList.contains("active")) {
+          container.classList.replace("active", "passive");
+        } else if (container.classList.contains("passive")) {
+          container.classList.replace("passive", "active");
+        } else {
+          container.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+</html>

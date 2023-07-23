@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="checkbox" name="" id="sartlar" />
+    <label for="sartlar">Sartlari kabul ediyorum</label>
+    <button id="btnSave" disabled>Kaydet</button>
+
+    <script>
+      let sartlar = document.getElementById("sartlar");
+      let btnSave = document.getElementById("btnSave");
+      sartlar.addEventListener("click", () => {
+        if (sartlar.checked) {
+          btnSave.removeAttribute("disabled");
+        } else {
+          btnSave.setAttribute("disabled", "true");
+        }
+      });
+    </script>
+  </body>
+</html>
